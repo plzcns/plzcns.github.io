@@ -1,0 +1,28 @@
+<table id="maindata" class="header tablesorter" cellspacing="0" cellpadding="2" border="0" style="width:100%">
+    <thead>
+        <tr>
+        {% for item in header %}
+          <th class="{{item.class}}" style="{{item.style}}">{{item.value}}</th>
+        {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for id,item in data %}
+        <tr id="{{id}}" class="l">
+        {% for i in item %}
+            {% if loop.index0 == 0 %}
+            <td class="col10">{{i}}</td>
+            {% else %}
+                {% if i == "true" %}
+                    <td class="col"><img src="{{path}}/artwork/tick.gif"></td>
+                {% elseif i == "false" %}
+                    <td class="col"><img src="{{path}}/artwork/cross.gif"></td>
+                {% else %}
+                    <td class="col">{{i|raw}}</td>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

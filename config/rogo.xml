@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<rogo>
+    <version>6.3.3</version>
+    <php>
+        <min_version>5.3.9</min_version>
+        <extensions>
+            <extension>mysqli</extension>
+            <extension>mcrypt</extension>
+            <extension>curl</extension>
+            <extension>gd</extension>
+            <extension>ctype</extension>
+            <extension>mbstring</extension>
+            <extension>xml</extension>
+            <extension>xmlrpc</extension>
+            <extension>fileinfo</extension>
+        </extensions>
+    </php>
+    <database>
+        <mysql>
+            <min_version>50100</min_version>
+        </mysql>
+    </database>
+    <translations>
+        <url>http://rogo-oss.nottingham.ac.uk/langpacks</url>
+    </translations>
+</rogo>

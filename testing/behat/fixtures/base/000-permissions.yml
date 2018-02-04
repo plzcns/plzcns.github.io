@@ -1,0 +1,35 @@
+## Data for the permissions table.
+---
+permissions:
+  -
+    action: "assessmentmanagement/create"
+  -
+    action: "assessmentmanagement/delete"
+  -
+    action: "assessmentmanagement/schedule"
+  -
+    action: "gradebook"
+  -
+    action: "modulemanagement/create"
+  -
+    action: "modulemanagement/delete"
+  -
+    action: "modulemanagement/enrol"
+  -
+    action: "modulemanagement/unenrol"
+  -
+    action: "usermanagement/create"
+  -
+    action: "usermanagement/delete"
+  -
+    action: "coursemanagement/create"
+  -
+    action: "coursemanagement/delete"
+  -
+    action: "schoolmanagement/create"
+  -
+    action: "schoolmanagement/delete"
+  -
+    action: "facultymanagement/create"
+  -
+    action: "facultymanagement/delete"
